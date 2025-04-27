@@ -1,5 +1,5 @@
 session:
-  store: ${SESSION_STORE:redis}   # redis 또는 dynamodb
+  store: "${SESSION_STORE:redis}"   # redis 또는 dynamodb
 
 spring:
   redis:
@@ -8,9 +8,9 @@ spring:
 
 aws:
   dynamodb:
-    endpoint: http://localhost:8000
-    region: ap-northeast-2
-y
+    endpoint: "http://localhost:8000"
+    region: "ap-northeast-2"
+
 server:
   port: 8080
 

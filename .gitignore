@@ -1,0 +1,10 @@
+# Gradle
+.gradle/
+build/
+
+# IDE 설정 파일
+.idea/
+*.iml
+
+# OS
+.DS_Store

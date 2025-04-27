@@ -1,0 +1,25 @@
+session:
+  store: ${SESSION_STORE:redis}   # redis 또는 dynamodb
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+aws:
+  dynamodb:
+    endpoint: http://localhost:8000
+    region: ap-northeast-2
+y
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+metrics:
+  export:
+    prometheus:
+      enabled: true

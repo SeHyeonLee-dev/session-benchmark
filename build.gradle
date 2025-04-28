@@ -34,6 +34,7 @@ dependencies {
 	implementation "com.amazonaws:aws-java-sdk-dynamodb:${awsSdkVersion}"
 
 	// Micrometer Prometheus metrics
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'io.micrometer:micrometer-registry-prometheus'
 
 	// Lombok (optional)

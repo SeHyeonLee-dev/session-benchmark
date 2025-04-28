@@ -14,10 +14,15 @@ server:
   port: 8080
 
 management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus,metrics
-  endpoint:
-    prometheus:
-      enabled: true
+        include: health, info, metrics, prometheus
+  metrics:
+    tags:
+      application: monitoring

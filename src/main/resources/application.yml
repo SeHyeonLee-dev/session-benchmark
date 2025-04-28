@@ -26,3 +26,10 @@ management:
   metrics:
     tags:
       application: monitoring
+    distribution:
+      # HTTP 요청 타이머에 대한 히스토그램 버킷 생성 활성화
+      percentiles-histogram:
+        http.server.requests: true
+      # (선택) 미리 계산할 백분위(0.5=P50, 0.9=P90, 0.99=P99)
+      percentiles:
+        http.server.requests: 0.5,0.9,0.99

@@ -3,12 +3,11 @@ session:
 
 spring:
   redis:
-    host: localhost
+    host: 10.30.0.14
     port: 6379
 
 aws:
   dynamodb:
-    endpoint: "http://localhost:8000"
     region: "ap-northeast-2"
 
 server:
